@@ -12,7 +12,7 @@ public class Main {
         return sum;
     }
 
-    public int AverageSales(int[] sales) { //ищет среднюю сумму продаж
+    public int averageSales(int[] sales) { //ищет среднюю сумму продаж
         int sum = sumSales(sales);
         int average = sum / sales.length;
 
@@ -42,8 +42,8 @@ public class Main {
         return minMonth + 1;
     }
 
-    public int AboveAverageSales(int[] sales) { //ищет количество месяцев с продажами выше среднего
-        int average = AverageSales(sales);
+    public int aboveAverageSales(int[] sales) { //ищет количество месяцев с продажами выше среднего
+        int average = averageSales(sales);
         int count = 0;
 
         for (int i = 0; i < sales.length; i++) {
@@ -54,8 +54,8 @@ public class Main {
         return count;
     }
 
-    public int BelowAverageSales(int[] sales) { //ищет количество месяцев с продажами ниже среднего
-        int average = AverageSales(sales);
+    public int belowAverageSales(int[] sales) { //ищет количество месяцев с продажами ниже среднего
+        int average = averageSales(sales);
         int count = 0;
 
         for (int i = 0; i < sales.length; i++) {

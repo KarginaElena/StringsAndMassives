@@ -21,7 +21,7 @@ public class StatsServiceTest {
 
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
-        int actual = service.AverageSales(sales);
+        int actual = service.averageSales(sales);
 
         Assertions.assertEquals(expected, actual);
 
@@ -55,7 +55,7 @@ public class StatsServiceTest {
 
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
-        int actual = service.AboveAverageSales(sales);
+        int actual = service.aboveAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -66,7 +66,7 @@ public class StatsServiceTest {
 
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
-        int actual = service.AboveAverageSales(sales);
+        int actual = service.aboveAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
